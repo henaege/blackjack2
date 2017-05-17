@@ -1,0 +1,163 @@
+body {
+    background: url("../casino_wallpaper_16.jpg") no-repeat 0 0;
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+    max-height: 120px;
+}
+
+.blink {
+    color: yellow;
+    text-shadow: 0 0 10px rgba(255,255,0,1) , 0 0 20px rgba(100,100,100,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px yellow , 0 0 70px yellow , 0 0 80px yellow , 0 0 100px yellow ;
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    font-size: 80px;
+    font-family: 'Inknut Antiqua', serif;
+    margin: 30px;
+    
+}
+
+#b {
+    animation: blinker 1s linear infinite;
+}
+#l {
+    animation: blinker 1s linear infinite;
+    animation-delay: .1s;
+}
+#a1 {
+    animation: blinker 1s linear infinite;
+    animation-delay: .2s;
+}
+#c1 {
+    animation: blinker 1s linear infinite;
+    animation-delay: .3s;
+}
+#k1 {
+    animation: blinker 1s linear infinite;
+    animation-delay: .4s;
+}
+#j {
+    animation: blinker 1s linear infinite;
+    animation-delay: .5s;
+}
+#a2 {
+    animation: blinker 1s linear infinite;
+    animation-delay: .6s;
+}
+#c2 {
+    animation: blinker 1s linear infinite;
+    animation-delay: .7s;
+}
+#k2 {
+    animation: blinker 1s linear infinite;
+    animation-delay: .8s;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+.the-table {
+    background: url("../felt.jpg") no-repeat 0 0;
+    /*border: 15px solid #542311;*/
+    padding: 30px;
+    margin-top: 5px;
+    margin-left: -30px;
+    border: 10px solid #542311;
+    border-radius: 10px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 53vh;
+    width: 95vw;
+}
+.wood-border {
+    /*background: url('../walnut.jpg') no-repeat;
+    border: 10px solid #000;
+    box-sizing: border-box;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;*/
+}
+.dealer-cards {
+    /*border: .5px dashed lightgray;*/
+}
+
+.player-cards {
+    /*border: .5px dashed lightgray;*/
+    margin-bottom: 30px;
+}
+
+.card {
+    height: 120px;
+    /*background-color: white;*/
+    color: black;
+    margin: 5px;
+    /*width: 10%;*/
+    float: left;
+    position: relative;
+    transition: all 1s ease-out;
+    top: -600px;
+}
+
+.card img{
+    max-height: 100%;
+    margin-right: 10px;
+    
+}
+
+.dealt {
+    top: 0px;
+    transform: rotate(360deg);
+}
+
+.button {
+    width: 100%;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    letter-spacing: 1.5px;
+    outline: none;
+}
+
+.deal-button {
+    background-color: #277714;
+    color: white;
+}
+.deal-button:hover {
+    background-color: #35a518;
+}
+.hit-button {
+    background-color: blue;
+    color: white;
+}
+.hit-button:hover {
+    background-color: #00a9ff;
+}
+.stand-button {
+    background-color: goldenrod;
+    color: white;
+}
+.stand-button:hover {
+    background-color: gold;
+}
+
+.dealer-total, .player-total {
+    border: 2px inset darkred;
+    background-color: maroon;
+    color: white;
+    margin: 1em;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.message {
+    height: 50px;
+    border: 2px inset darkred;
+    background-color: maroon;
+    color: white;
+    margin-top: 22px;
+    line-height: 40px;
+    font-size: 20px;
+    vertical-align: middle;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blackjack</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-sm-12 text-center blink">
+                <span id="b">B</span>
+                <span id="l">L</span>
+                <span id="a1">A</span>
+                <span id="c1">C</span>
+                <span id="k1">K</span>
+                <span id="j">J</span>
+                <span id="a2">A</span>
+                <span id="c2">C</span>
+                <span id="k2">K</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!--Set up an element to hold the table-->
+                <div class="wood-border">
+                <div class="the-table col-sm-12">
+                    <!--All the dealer stuff-->
+                    <div class="row">
+                        <div class="col-sm-12 dealer-hand-wrapper">
+                            <!--Dealer total and dealer cards (max 6)-->
+                            <div class="col-sm-2 dealer-total text-center">
+                                Dealer Total: <span class="dealer-total-number"> 0</span>
+                            </div>
+                            <div class="col-sm-9 dealer-cards">
+                                <div class="card card-1"></div>
+                                <div class="card card-2"></div>
+                                <div class="card card-3"></div>
+                                <div class="card card-4"></div>
+                                <div class="card card-5"></div>
+                                <div class="card card-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--All the player stuff-->
+                    <div class="row">
+                        <div class="col-sm-12 player-hand-wrapper">
+                            <!--Player total and player cards (max 6)-->
+                            <div class="col-sm-2 player-total text-center">
+                                Player Total: <span class="player-total-number"> 0</span>
+                            </div>
+                            <div class="col-sm-9 player-cards">
+                                <div class="card card-1"></div>
+                                <div class="card card-2"></div>
+                                <div class="card card-3"></div>
+                                <div class="card card-4"></div>
+                                <div class="card card-5"></div>
+                                <div class="card card-6"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 col-sm-offset-2 text-center">
+                                <button class="button deal-button">Deal</button>
+                            </div>
+                            <div class="col-sm-2 col-sm-offset-1 text-center">
+                                <button class="button hit-button">Hit</button>
+                            </div>
+                            <div class="col-sm-2 col-sm-offset-1 text-center">
+                                <button class="button stand-button">Stand</button>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-sm-4 col-sm-offset-4 message text-center"><span></span></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
