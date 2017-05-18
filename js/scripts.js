@@ -34,9 +34,15 @@ $(document).ready(function() {
         setTimeout(function(){placeCard('dealer',1,dealersHand[0]);},600)
         setTimeout(function(){placeCard('dealer',2,dealersHand[1]);},1800)
 
-        setTimeout(function(){calculateTotal(playersHand, 'player');},2400)
-        setTimeout(function(){calculateTotal(dealersHand, 'dealer');},2400)
+        setTimeout(function(){calculateTotal(playersHand, 'player');},2600)
+        setTimeout(function(){calculateTotal(dealersHand, 'dealer');},2600)
         if (standing == true){
+            checkWin();
+        }
+        if (calculateTotal(playersHand, 'player') >= 21) {
+            checkWin();
+        }
+        if (calculateTotal(dealersHand, 'dealer') >= 21) {
             checkWin();
         }
     });
@@ -54,7 +60,6 @@ $(document).ready(function() {
             let slotForNewCard = playersHand.length;
             placeCard('player', slotForNewCard, playersHand[lastCardIndex]);
             calculateTotal(playersHand, 'player');
-            
         } 
         if (calculateTotal(playersHand, 'player') >= 21) {
             checkWin();
@@ -68,8 +73,8 @@ $(document).ready(function() {
             dealersHand.push(theDeck.shift());
             let lastCardIndex = dealersHand.length - 1;
             let slotForNewCard = dealersHand.length;
-            placeCard('dealer', slotForNewCard, dealersHand[lastCardIndex]);
-            dealerTotal = calculateTotal(dealersHand, 'dealer');
+            setTimeout(function(){placeCard('dealer', slotForNewCard, dealersHand[lastCardIndex]);}, 600);
+            dealerTotal = setTimeout(function(){calculateTotal(dealersHand, 'dealer')}, 600);
         }
         standing = true;
         checkWin();

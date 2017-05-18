@@ -118,6 +118,12 @@ img {
     border: none;
     letter-spacing: 1.5px;
     outline: none;
+    box-shadow: 2px 3px #999;
+}
+
+.button:active {
+    box-shadow: 0 0 #666;
+    transform: translateY(4px);
 }
 
 .deal-button {
