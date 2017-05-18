@@ -98,6 +98,8 @@ $(document).ready(function() {
         } else {
             if (playerTotal > dealerTotal) {
                 winner = "You beat the House!";
+            } else if (dealerTotal == 21) {
+                winner = "Blackjack! The House wins"
             } else if (playerTotal < dealerTotal) {
                 winner = "You lose!";
             } else {
