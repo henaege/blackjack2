@@ -9,6 +9,8 @@ $(document).ready(function() {
     let dealersHand = [];
     let theDeck = freshDeck.slice();
     let standing = false;
+    letPlayerCash = 500;
+    let bet = 0;
     ////////////////////
     // EVENT HANDLERS//
     //////////////////
@@ -96,7 +98,7 @@ $(document).ready(function() {
         } else if (dealerTotal > 21) {
             winner = "The House busted, you Win!!";
         } else {
-            if (playerTotal > dealerTotal) {
+            if ((playerTotal > dealerTotal) && (dealerTotal < 21)) {
                 winner = "You beat the House!";
             } else if (dealerTotal == 21) {
                 winner = "Blackjack! The House wins"

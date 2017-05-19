@@ -58,18 +58,24 @@ img {
   50% { opacity: 0; }
 }
 
+.container {
+    perspective: 800px;
+}
+
 .the-table {
     background: url("../felt.jpg") no-repeat 0 0;
     /*border: 15px solid #542311;*/
     padding: 30px;
     margin-top: 5px;
     margin-left: -30px;
-    border: 10px solid #542311;
+    border: 10px solid #D8973C;
     border-radius: 10px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     height: 53vh;
     width: 95vw;
+    transform: rotateX(25deg);
+    box-shadow: 0 20px 10px black
 }
 .wood-border {
     /*background: url('../walnut.jpg') no-repeat;
@@ -119,7 +125,7 @@ img {
     border: none;
     letter-spacing: 1.5px;
     outline: none;
-    box-shadow: 2px 3px #999;
+    box-shadow: 0 3px #555;
 }
 
 .button:active {
@@ -158,6 +164,7 @@ img {
     margin: 1em;
     line-height: 20px;
     vertical-align: middle;
+    font-size: 1.5em;
 }
 
 .message {
@@ -172,3 +179,19 @@ img {
     font-size: 20px;
     vertical-align: middle;
 }
+
+.money-box {
+    background: url("../felt.jpg") no-repeat 0 0;
+    margin-top: 50px;
+    border: 5px solid #D8973C;
+    color: antiquewhite;
+    text-shadow: 0 0 20px goldenrod;
+    font-weight: 500;
+    border-radius: 10px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+ h5 {
+     font-size: 3em;
+     font-weight: 700;
+ }
