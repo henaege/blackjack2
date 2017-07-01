@@ -3,4 +3,9 @@
 
 ***
 
-[Demo](http://iamdrewt.net)
+[Demo](https://youtu.be/D5kC4Ae4y5s)
+
+***
+
+### To-Do:
+  - Enable bets
