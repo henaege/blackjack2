@@ -9,3 +9,5 @@
 
 ### To-Do:
   - Enable bets
+  - Add split & insurance
+  - Change to CSS Grid from Bootstrap (maybe)
